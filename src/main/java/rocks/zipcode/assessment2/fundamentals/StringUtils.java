@@ -28,7 +28,11 @@ public class StringUtils {
      * @return the string repeated and concatenated `n` times
      */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
-        return null;
+        String result = "";
+        for (int i = 0; i < numberOfTimeToRepeat; i++) {
+            result += stringToBeRepeated;
+        }
+        return result;
     }
 
     /**
@@ -36,7 +40,15 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-        return null;
+     /*   char [] chars = string.toCharArray();
+        for (char c : chars){
+            if(!Character.isLetter(c)){
+                return false;
+            }
+        }
+*/
+ //       string.toLowerCase();
+        return string.matches("[a-z]"); // ****************
     }
 
     /**
@@ -44,7 +56,7 @@ public class StringUtils {
      * @return - true if string only contains numeric characters
      */
     public static Boolean isNumericString(String string) {
-        return null;
+        return string.matches("[0-9]+");
     }
 
     /**
@@ -52,6 +64,6 @@ public class StringUtils {
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        return null;
+        return string.matches("[0-9]+[a-zA-Z]");
     }
 }
