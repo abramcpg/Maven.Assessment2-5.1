@@ -22,7 +22,7 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of 3
      */
     public static Boolean isMultipleOf3(Integer value) {
-        return null;
+        return (value % 3 == 0);
     }
 
     /**
@@ -32,7 +32,7 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of `multiple`
      */
     public static Boolean isMultipleOfN(Integer value, Integer multiple) {
-        return null;
+        return (value % multiple == 0);
     }
 
     /**
